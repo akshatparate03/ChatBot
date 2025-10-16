@@ -3,7 +3,13 @@ from flask_cors import CORS
 import requests, re
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={
+    r"/*": {
+        "origins": ["https://advancedchatbot.netlify.app"],
+        "methods": ["GET", "POST"],
+        "allow_headers": ["Content-Type"]
+    }
+})
 
 def clean_text(text):
     text = re.sub(r'[*_#>`~\-]+', '', text)
