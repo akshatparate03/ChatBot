@@ -10,6 +10,10 @@ def clean_text(text):
     text = re.sub(r'\n+', '\n', text)
     return text.strip()
 
+@app.route('/')
+def home():
+    return jsonify({"message": "Backend is running successfully 🚀"})
+
 @app.route("/chat", methods=["POST"])
 def chat():
     user_message = request.json.get("message")
