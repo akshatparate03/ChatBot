@@ -7,8 +7,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  min-height: 100vh;
-  height: 100vh;
+  min-height: 93vh;
+  height: 93vh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -587,7 +587,7 @@ body.light-theme .social-icons a {
   }
 
   #chat-container {
-    height: 85vh;
+    height: 75vh;
     border-radius: 16px;
   }
 
